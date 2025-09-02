@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Larger dimensions for tablets and large screens (7+ inches) -->
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_extra_large">48dp</dimen>
+    
+    <!-- Padding dimensions -->
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="padding_extra_large">48dp</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_title">28sp</dimen>
+    <dimen name="text_size_headline">32sp</dimen>
+    <dimen name="text_size_display">40sp</dimen>
+    
+    <!-- Button dimensions -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_height_large">64dp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="button_corner_radius_large">16dp</dimen>
+    
+    <!-- Card dimensions -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_elevation_pressed">12dp</dimen>
+    
+    <!-- Icon sizes -->
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">28dp</dimen>
+    <dimen name="icon_size_large">40dp</dimen>
+    <dimen name="icon_size_extra_large">56dp</dimen>
+    
+    <!-- Input field dimensions -->
+    <dimen name="input_field_height">64dp</dimen>
+    <dimen name="input_field_corner_radius">12dp</dimen>
+    
+    <!-- FAB dimensions -->
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_size">64dp</dimen>
+    
+    <!-- Loading indicator dimensions -->
+    <dimen name="loading_indicator_size">56dp</dimen>
+    <dimen name="progress_indicator_size">28dp</dimen>
+    
+    <!-- Dashboard card dimensions -->
+    <dimen name="dashboard_card_height">140dp</dimen>
+    <dimen name="dashboard_chart_height">400dp</dimen>
+    
+    <!-- Additional card dimensions -->
+    <dimen name="card_corner_radius_large">20dp</dimen>
+</resources>

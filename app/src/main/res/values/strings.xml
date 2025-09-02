@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ready_to_check_in">Ready to Check In</string>
+    <string name="ready_to_check_out">Ready to Check Out</string>
+    <string name="select_biometric_check_in">Select your preferred biometric method to check in</string>
+    <string name="select_biometric_check_out">Select your preferred biometric method to check out</string>
+    <string name="scan_face_instruction">Scan your face to record attendance</string>
+    <string name="face_detection_unavailable">Face detection not available on this device</string>
+    <string name="use_fingerprint_instruction">Use your fingerprint to record attendance</string>
+    <string name="fingerprint_sensor_unavailable">Fingerprint sensor not available</string>
+    <string name="fingerprint_not_setup">Fingerprint not set up on device</string>
+    <string name="attendance_recorded">✓ Attendance Recorded</string>
+
+    <!-- Biometric Registration -->
+    <string name="fingerprint_not_available">Fingerprint Not Available</string>
+    <string name="fingerprint_setup_required">Fingerprint Setup Required</string>
+    <string name="scan_face_id">Scan Face ID</string>
+    <string name="scan_fingerprint_id">Scan Fingerprint ID</string>
+    <string name="face_registered">✓ Face Registered</string>
+    <string name="face_registration_skipped">Face Registration Skipped</string>
+    <string name="fingerprint_registered">✓ Fingerprint Registered</string>
+    <string name="fingerprint_registration_skipped">Fingerprint Registration Skipped</string>
+    <string name="registration_step_face">Step 1: Register your face for attendance</string>
+    <string name="registration_step_fingerprint">Step 2: Register your fingerprint for attendance</string>
+    <string name="registration_complete">Registration complete! Redirecting to dashboard…</string>
+    <string name="registration_progress">Registration Progress: %1$d%%</string>
+
+    <!-- Sync Status -->
+    <string name="syncing">Syncing…</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="check_sync">Check Sync</string>
+    <string name="sync_status_offline">Offline</string>
+    <string name="sync_status_failed">Sync failed</string>
+    <string name="sync_status_complete">Up to date</string>
+</resources>

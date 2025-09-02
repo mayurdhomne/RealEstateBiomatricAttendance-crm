@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loading_overlay"
+    android:clickable="true"
+    android:focusable="true"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_extra_large"
+        android:background="@drawable/loading_background"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:layout_margin="@dimen/margin_large">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="@dimen/loading_indicator_size"
+            android:layout_height="@dimen/loading_indicator_size"
+            android:indeterminate="true"
+            app:indicatorColor="@color/gold_primary"
+            app:trackColor="@color/progress_track" />
+
+        <TextView
+            android:id="@+id/tvLoadingMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Loading..."
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_large"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:maxWidth="200dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.App.Button.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Cancel"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

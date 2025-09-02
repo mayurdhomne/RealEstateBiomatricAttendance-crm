@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/padding_medium">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBiometricRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:text="Biometric Registration"
+                android:textColor="@color/navy_primary"
+                android:textSize="@dimen/text_size_headline"
+                android:fontFamily="@font/roboto_bold"
+                android:contentDescription="Biometric registration title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="Complete your onboarding by registering your biometrics"
+                android:textAlignment="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/roboto_medium"
+                android:contentDescription="Registration instructions"
+                app:layout_constraintEnd_toEndOf="@+id/tvBiometricRegistration"
+                app:layout_constraintStart_toStartOf="@+id/tvBiometricRegistration"
+                app:layout_constraintTop_toBottomOf="@+id/tvBiometricRegistration" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                style="@style/Widget.App.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                android:focusable="true"
+                android:layout_margin="10dp"
+                android:contentDescription="Biometric registration card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="@dimen/padding_large">
+
+                    <!-- Progress Indicator -->
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/registrationProgress"
+                        style="@style/Widget.App.CircularProgressIndicator"
+                        android:layout_width="@dimen/loading_indicator_size"
+                        android:layout_height="@dimen/loading_indicator_size"
+                        android:visibility="gone"
+                        android:contentDescription="Registration progress indicator"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Progress Text -->
+                    <TextView
+                        android:id="@+id/tvProgressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="Registration Progress: 0%"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_size_medium"
+                        android:fontFamily="@font/roboto_medium"
+                        android:visibility="gone"
+                        android:contentDescription="Registration progress percentage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registrationProgress" />
+
+                    <!-- Instructions -->
+                    <TextView
+                        android:id="@+id/tvInstructions"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="Step 1: Register your face for attendance"
+                        android:textAlignment="center"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="@dimen/text_size_large"
+                        android:fontFamily="@font/roboto_bold"
+                        android:contentDescription="Registration step instructions"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProgressText" />
+
+                    <!-- Face Registration Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnScanFaceID"
+                        style="@style/Widget.App.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height_large"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:text="Register Face"
+                        android:contentDescription="Register face biometric button"
+                        app:icon="@drawable/ic_face"
+                        app:iconGravity="textStart"
+                        app:iconSize="@dimen/icon_size_medium"
+                        app:iconTint="@color/text_on_primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInstructions" />
+
+                    <!-- Fingerprint Registration Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnScanFingerprintID"
+                        style="@style/Widget.App.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height_large"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="Register Fingerprint"
+                        android:contentDescription="Register fingerprint biometric button"
+                        app:icon="@drawable/ic_fingerprint"
+                        app:iconGravity="textStart"
+                        app:iconSize="@dimen/icon_size_medium"
+                        app:iconTint="@color/navy_primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnScanFaceID" />
+
+                    <!-- Registration Info -->
+                    <TextView
+                        android:id="@+id/tvRegistrationInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="Both face and fingerprint registration are required for attendance tracking"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_size_small"
+                        android:fontFamily="@font/roboto_medium"
+                        android:contentDescription="Registration requirements information"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnScanFingerprintID" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

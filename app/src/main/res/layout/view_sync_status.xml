@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/sync_status_background"
+    android:layout_margin="8dp">
+
+    <!-- Main sync status row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Status icon -->
+        <ImageView
+            android:id="@+id/iv_sync_status_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_sync_done"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/black" />
+
+        <!-- Status text -->
+        <TextView
+            android:id="@+id/tv_sync_status_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All attendance records synced"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Sync progress -->
+        <ProgressBar
+            android:id="@+id/pb_sync_progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleSmall" />
+
+        <!-- Sync button -->
+        <TextView
+            android:id="@+id/tv_sync_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Now"
+            android:textSize="12sp"
+            android:textColor="@color/primary_color"
+            android:background="@drawable/sync_button_background"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <!-- Network status row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Network icon -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_network"
+            android:layout_marginEnd="6dp"
+            android:alpha="0.7"
+            app:tint="@color/text_secondary" />
+
+        <!-- Network status text -->
+        <TextView
+            android:id="@+id/tv_network_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connected via WiFi"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+</LinearLayout>

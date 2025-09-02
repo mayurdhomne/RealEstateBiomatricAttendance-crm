@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RealEstaateBiomatricAttendance" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <!-- Customize your light theme here. -->
+        <!-- Remove or override the colorPrimary if it's not needed -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Set Background Color -->
+        <item name="android:windowBackground">@android:color/white</item> <!-- Change to desired color -->
+
+        <!-- Set Status Bar Color -->
+        <item name="android:statusBarColor">@color/colorAccent</item>
+
+        <!-- Optional: Set Navigation Bar Color -->
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+    </style>
+    <style name="AdvancedProgressBar">
+        <item name="android:progressDrawable">@drawable/progress_bar_advanced</item>
+    </style>
+    <style name="BottomSheetTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/CustomBottomSheetShape</item>
+    </style>
+
+    <style name="CustomBottomSheetShape" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSize">24dp</item>
+    </style>
+</resources>

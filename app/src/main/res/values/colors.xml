@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="gold_primary">#1C2A52</color> <!-- Replaced with image blue -->
+    <color name="gold_dark">#101A36</color> <!-- Darker blue -->
+    <color name="gold_light">#3A4A72</color> <!-- Lighter blue -->
+    <color name="navy_primary">#1C2A52</color> <!-- Roof & pen blue -->
+    <color name="navy_dark">#101A36</color>
+    <color name="navy_light">#3A4A72</color>
+
+    <!-- Theme Colors -->
+    <color name="colorPrimary">@color/navy_primary</color>
+    <color name="colorPrimaryDark">@color/navy_dark</color>
+    <color name="colorAccent">@color/gold_primary</color>
+    <color name="primary_color_light">@color/navy_light</color>
+    <color name="primary_color_pressed">@color/navy_dark</color>
+    <color name="primary_color">@color/navy_primary</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2B2B2B</color> <!-- Dark gray text -->
+    <color name="text_secondary">#666666</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#FFFFFF</color>
+    <color name="textColorPrimary">@color/text_primary</color>
+
+    <!-- System Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F9F9F9</color>
+    <color name="surface_variant">#E6E6E6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#1C2A52</color> <!-- Converted to blue -->
+    <color name="black">#000000</color>
+
+    <!-- Button Colors -->
+    <color name="button_disabled">#BDBDBD</color>
+
+    <!-- Input Colors -->
+    <color name="inputStrokeColor">#E0E0E0</color>
+    <color name="inputStrokeColorFocused">@color/gold_primary</color>
+
+    <!-- Progress Colors -->
+    <color name="progress_track">#E0E0E0</color>
+
+    <!-- Sync Related Colors -->
+    <color name="sync_status_background">#F5F5F5</color>
+    <color name="sync_status_border">#E0E0E0</color>
+
+    <!-- Overlay Colors -->
+    <color name="loading_overlay">#80000000</color>
+
+    <!-- Status Colors -->
+    <color name="red">#D64040</color> <!-- Person jacket red -->
+    <color name="green">#4CAF50</color> <!-- Keeping for status use -->
+    <color name="blue">#1C2A52</color> <!-- Same as navy_primary -->
+    <color name="color_orange">#FF9800</color>
+    <color name="success">@color/green</color>
+    <color name="error">@color/red</color>
+    <color name="warning">@color/color_orange</color>
+    <color name="success_green">@color/green</color>
+    <color name="error_red">@color/red</color>
+</resources>
